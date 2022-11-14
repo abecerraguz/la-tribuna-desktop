@@ -35,7 +35,7 @@ body {
 }
 
 .navbar{
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0bd;
     height: 80px;
     width: 100%;
     padding: 5px 18px;
@@ -232,7 +232,8 @@ li.nav-item a i {
 }
 
 .category{
-    background: grey;
+    /* background: grey; */
+    background:#3498db;
     padding: 0.3rem 0.5rem;
     display: inline-block;
     border-radius: 3px;
@@ -251,7 +252,7 @@ li.nav-item a i {
 time{
 	color: #fff;
 	font-weight: 400;
-	font-size: 1rem;
+	font-size:0.8rem;
 	font-weight: lighter;
 	letter-spacing: 1px;
 }
@@ -330,7 +331,8 @@ time{
 }
 
 .headerSection .category{
-    background: grey;
+    /* background: grey; */
+    background: #3498db;
     padding: 0.8rem 1.5rem;
     display: inline-block;
     border-radius: 3px 3px 0 0;
@@ -345,7 +347,7 @@ time{
 	height: auto;
 	overflow: hidden;
     /* border-top: 1px solid #eaeaea; */
-    box-shadow: 0px 0px 9px rgb(0 0 0 / 18%);
+    box-shadow: 0px 0px 3px rgb(0 0 0 / 18%);
 
 	/* background: purple; */
 }
@@ -356,10 +358,12 @@ time{
     height: auto;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     background: #fff;
     margin: 1rem 0;
-    box-shadow: 0px 0px 9px rgb(0 0 0 / 18%);
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 18%);
+    border-radius: 5px;
 }
 
 .cardSection img{
@@ -408,7 +412,7 @@ time{
 .cardSection__text time{
 	color: #27313B;
 	font-weight: 400;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	font-weight: lighter;
 	letter-spacing: 1px;
 }
@@ -480,7 +484,7 @@ time{
 .carousel-indicators {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom:0;
     left: 0;
     z-index: 2;
     display: flex;
@@ -527,4 +531,375 @@ time{
     border-top-right-radius: 3px!important;
     border-bottom-right-radius: 3px!important;
     border-bottom-left-radius: 3px!important;
+}
+
+.logoHeader{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.logoHeader__date{
+    width: 33.333%;
+    height: 70px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.logoHeader__date p{
+    margin: 0 0 0 0.8rem;
+    padding: 0;
+    /* border: 1px solid red; */
+    height: 20px;
+    font-size: 0.79rem;
+    letter-spacing: 1px;
+    color: #000;
+    text-transform: uppercase;
+    
+}
+
+.logoHeader__img{
+    width: 33.333%;
+    display: flex;
+    justify-content: center;
+}
+
+.logoHeader__redes{
+    width: 33.333%;
+    height: 70px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.logoHeader__redes-content{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+/* .logoHeader__date,.logoHeader__img,.logoHeader__redes, .logoHeader__redes-content{
+    border: 1px solid red;
+} */
+
+.logoHeader__redes-content a{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.3rem;
+    text-decoration: none;
+    border-radius: 100%;
+    background: #69bff9;
+    color: #fff;
+}
+
+.cardContentMedios{
+    background: #e5f4ff;
+    border-radius: 0.3rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    border: 1px solid #d5dde2;
+    box-shadow: 0px 1px 6px rgb(0 0 0 / 14%);
+}
+
+
+
+.cardContentMedios img{
+    width: 100%;
+    height: 70px;
+}
+
+
+
+.cardContentMedios .pronostico{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border-radius: 0.5rem;
+    margin: 0;
+    width: 90%;
+    background-color: transparent;
+}
+
+.cardContentMedios .pronostico h5{
+    text-align: center;
+    border-bottom: 1px solid #3498db75;
+    padding: 0;
+    margin: 0 0 2px 0;
+    color: #4d85c6;
+    font-size: 1.3rem;
+}
+.cardContentMedios .pronostico span{
+    border-bottom: 1px solid #3498db75;
+	margin: 0 0 2px 0;
+    padding: 0;
+    color: #4d85c6;
+    font-size: 0.8rem;
+}
+
+.cardContentMedios .pronostico a{
+	color: #4d85c6;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-size: 0.89rem;
+}
+
+.radio {
+    width: 140px;
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 0 1.5rem;
+}
+
+.radio:hover {
+    width: 140px;
+    opacity: 0.98;
+}
+
+.radio img{
+    width: 100%;
+}
+
+
+.redesComunidad{
+    width: 100%;
+    height: 35px;
+    background-color: #3498db;
+}
+
+ul.opcionesRedes{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.opcionesRedes li{
+    margin: 0;
+    padding: 0;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #ffffff78;
+}
+
+ul.opcionesRedes li a{
+    margin: 0;
+    padding: 0 1rem;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 0.89rem;
+}
+
+.mierda{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+}
+
+#live-latribuna {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#online_laTribuna{
+    border-radius:0.5rem;
+    background-color: #3498db;
+    padding:0;
+    margin: 0 0 1rem 0;
+}
+
+#online_laTribuna iframe{
+    border-radius: 3px;
+    padding: 2.5rem 0 0.8rem 0;
+}
+
+.containerIframe {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	/* padding-top: 62.5%;  8:5 Aspect Ratio */
+    padding-top: 67.5%; /* 8:5 Aspect Ratio */
+  }
+
+.responsive-iframe {
+	position: absolute;
+    top: 2px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+
+.contentCardOption {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.cardOption {
+    width: 20%;
+    height: auto;
+    overflow: hidden;
+    margin: 1rem;
+    padding: 1rem 0 0 0;
+}
+
+@media (max-width: 600px) {
+    .contentCardOption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .cardOption {
+        width: 31%;
+        height: auto;
+        overflow: hidden;
+        /* padding: 1rem 0.5rem; */
+        padding: 0;
+        margin: 0 2px;
+    }
+    .cardOption img {
+        width: 30px;
+        height: auto;
+        margin-top:10px
+    }
+    .cardOption h5 {
+        font-size: 1rem!important;
+    }
+}
+
+.containerIframe .category {
+    background: #0000001f;
+    padding: 0.3rem 0.5rem;
+    display: block;
+    border-radius: 3px;
+    margin-bottom: 0.8rem;
+    font-weight: lighter;
+    color: #fff!important;
+    font-size: 1rem;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    font-weight: 400;
+}
+
+.footer {
+    border-top: 5px solid #005996;
+    background: #003168;
+    padding: 35px 0;
+}
+
+.about-us-foot {
+    text-align:center;
+    color: #eee;
+}
+
+.about-us-foot img {
+    max-width: 20%;
+    margin-bottom: 1rem;
+}
+
+.footer ul {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    list-style: none;
+    margin: 0 0 2rem 0;
+    padding: 0;
+}
+
+.footer ul li {
+    list-style: none;
+    border-bottom: 1px solid #ffffff4d;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media {
+    text-align: left;
+    margin: 16px 0 0;
+    padding-bottom: 20px;
+}
+
+.social-media a {
+    margin: 0 3px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.copyright span {
+    color: #eeeeee;
+    text-align: center;
+}
+
+.social-media a i {
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    border-radius: 50%;
+    line-height: 29px;
+}
+
+.footer ul li i {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid #fff; */
+    border-radius: 100%;
+    margin-right: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.siguenos{
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    margin-top: 22px;
+}
+
+.radio__footer{
+    width: 100%;
+    height: auto;
+}
+.radio__footer img{
+    width: 50%!important;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
 }

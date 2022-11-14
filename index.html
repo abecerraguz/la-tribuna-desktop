@@ -22,13 +22,28 @@
 
 		</div>
 		<!-- CIERRE DE ADS SUPERIOR -->
-
+		<div class="logoHeader container py-3">
+			<div class="logoHeader__date">
+				<p>Jueves 10 de Noviembre 2022</p>
+			</div>
+			<div class="logoHeader__img">
+				<img src="./img/logo-header-azul.svg" alt="La Tribuna">
+			</div>
+			<div class="logoHeader__redes">
+				<div class="logoHeader__redes-content">
+					<a href="" class="redes"><i class="fa fa-facebook"></i></a>
+					<a href="" class="redes"><i class="fa fa-twitter"></i></a>
+					<a href="" class="redes"><i class="fa fa-instagram"></i></a>
+					<a href="" class="redes"><i class="fa-brands fa-youtube"></i></a>
+				</div>
+			</div>
+		</div>
 		<nav class="navbar navbar-dark bg-dark">
-			<div class="container d-flex">
+			<div class="container d-flex justify-content-start">
 
 			 <div class="brandMenu">
 
-				  <a class="navbar-brand" href="#">
+				  <a class="navbar-brand d-none" href="#">
 					<img src="./img/logo-header.svg" alt="La Tribuna" width="180">
 				  </a>
 		
@@ -64,11 +79,13 @@
 					  <a href="#" target="_blank">Policial</a>
 					</li>
 				  </ul>
-
+				 
 			 </div>
-			
-
-			  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+			 <div class="radio">
+				<img src="./img/radio-san-cristobal-white.svg" alt="">
+			 </div>
+			  
+			  <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
 				<span class="navbar-toggler-icon"></span>
 			  </button>
 
@@ -99,11 +116,21 @@
 				  </ul>
 	
 				</div>
-			  </div>
+			  </div> -->
 
 
 			</div>
 		  </nav>
+		  <div class="redesComunidad">
+			<div class="container mierda">
+				<ul class="opcionesRedes">
+					<li><a href="#" target="_blank"><i class="fa-regular fa-message"></i> Reportero ciudadano</a></li>
+					<li><a href="#" target="_blank"><i class="fa-solid fa-newspaper"></i> Registrate en nuestro newsletter</a></li>
+					<li><a href="#" target="_blank"><i class="fa-regular fa-note-sticky"></i> Papel Digital</a></li>
+					<li><a href="#" target="_blank"><i class="fa-solid fa-cloud-sun-rain"></i> 28 &#8451 / 11 &#8451</a></li>
+				</ul>
+			</div>
+		  </div>
 
 		
 	</header>
@@ -111,6 +138,32 @@
 
 	<section class="my-4">
 		<div class="container">
+			<!-- <div class="row mb-4">
+				<div class="col-md-3">
+					<div class="cardContentMedios">
+						<img src="./img/reportero.svg" alt="Reportero Ciudadano">
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="cardContentMedios">
+						<img src="./img/registro-newsletter.svg" alt="">
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="cardContentMedios">
+						<div class="pronostico">
+							<h5>28 &#8451</h5>
+							<span>28 &#8451 / 11 &#8451</span>
+							<a href="#" target="_blank"><i class="fa-solid fa-link"></i> Ver pronostico</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="cardContentMedios">
+						<img src="./img/radio-san-cristobal-white.svg" alt="">
+					</div>
+				</div>
+			</div> -->
 			<div class="row">
 				<div class="col-12">
 					<div class="infoAdd__90-728"></div>
@@ -125,10 +178,14 @@
 				<div class="col-7">
 					<!-- INICIO SECTION CARD -->
 					<section class="section section-gran-titular">
+					
 						<article class="article main-article">
 							<div class="article-image" style="background-image: url(https://media.biobiochile.cl/wp-content/uploads/2022/11/alcalde-hualpen-lamenta-balaceras-criticas-gobierno-750x400.jpg)">
+								<div class="category" style="position: absolute;top: 1rem;left: 1rem;">
+									<a href="#" target="_blank">Lo más visto</a>
+								</div>
 							</div>
-							<div class="article-text-container ">
+							<div class="article-text-container">
 								<h2 class="article-title">
 									"¿Hasta cuándo?": con codazo a PDI y Gobierno, alcalde de Hualpén lamenta dos balaceras en su comuna
 								</h2>
@@ -176,7 +233,19 @@
 				<!-- CIERRE DE COL-8 -->
 
 				<div class="col-3">
-					<!-- INICIO DE EDICION IMPRESA -->
+					<!-- INICIO DE SEÑAL ONLINE -->
+					<div id="online_laTribuna">
+						<!-- CIERRE DE SEÑAL ONLINE -->
+						<div class="containerIframe">
+							<div class="category">
+								<a href="#" target="_blank"><i class="fa-regular fa-circle-play"></i> La Tribuna On line</a>
+							</div>
+							<iframe class="responsive-iframe" src="https://player.vimeo.com/video/82481183?background=1" frameborder="0" allow="autoplay"></iframe>
+						</div>
+						<!-- INICIO DE EDICION IMPRESA -->
+					</div>
+
+
 					<div id="carouselIndicatorsEdicionImpresa" class="carousel slide container" data-bs-ride="true">
 
 						<div class="carousel-indicators">
@@ -189,10 +258,9 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="card">
-										<img src="http://placehold.jp/200x300.png" class="card-img-top" alt="...">
+										<img src="http://placehold.jp/200x240.png" class="card-img-top" alt="...">
 										<div class="card-body text-center">
 										  <h5 class="card-title">Card title</h5>
-										  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 										</div>
 									</div>
 								</div>
@@ -202,10 +270,9 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="card">
-										<img src="http://placehold.jp/200x300.png" class="card-img-top" alt="...">
+										<img src="http://placehold.jp/200x240.png" class="card-img-top" alt="...">
 										<div class="card-body text-center">
 										  <h5 class="card-title">Card title</h5>
-										  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 										</div>
 									</div>	
 								</div>
@@ -215,10 +282,10 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="card">
-										<img src="http://placehold.jp/200x300.png" class="card-img-top" alt="...">
+										<img src="http://placehold.jp/200x240.png" class="card-img-top" alt="...">
 										<div class="card-body text-center">
 										  <h5 class="card-title">Card title</h5>
-										  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
 										</div>
 									</div>
 								</div>
@@ -232,8 +299,17 @@
 		</div>
 	</section>
 
-
-	<!-- INICIO DE ULTIMAS NOTICIAS -->
+	<!-- INICIO SECTION LO ULTIMO -->
+	<div class="headerSection container mt-5">
+		<div class="category">
+			<a href="#" target="_blank">Lo último</a>
+		</div>
+	</div>
+	<section class="bodySection bgGrey">
+		
+		<div class="container py-3">
+			<div class="row">
+					<!-- INICIO DE LO ULTIMO -->
 	<div id="carouselExampleIndicators" class="carousel slide container my-5" data-bs-ride="true">
 	
 		<div class="carousel-inner">
@@ -248,7 +324,7 @@
 								<a href="#" target="_blank">Deportes</a>
 							</div>
 							<h2><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugiat libero</a></h2>
-							<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+							<time><i class="fa-regular fa-clock"></i> 10:20</time>
 						</div>
 					</div>
 				</div>
@@ -260,7 +336,7 @@
 								<a href="#" target="_blank">Salud</a>
 							</div>
 							<h2><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugiat libero</a></h2>
-							<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+							<time><i class="fa-regular fa-clock"></i> 11:15</time>
 						</div>
 					</div>
 				</div>
@@ -272,7 +348,7 @@
 								<a href="#" target="_blank">Politica</a>
 							</div>
 							<h2><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugiat libero</a></h2>
-							<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+							<time><i class="fa-regular fa-clock"></i> 12:45</time>
 						</div>
 					</div>
 				</div>
@@ -289,7 +365,7 @@
 								<a href="#" target="_blank">Noticias</a>
 							</div>
 							<h2><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugiat libero</a></h2>
-							<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+							<time><i class="fa-regular fa-clock"></i>15:45</time>
 						</div>
 					</div>
 				</div>
@@ -301,7 +377,7 @@
 								<a href="#" target="_blank">Nacional</a>
 							</div>
 							<h2><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugiat libero</a></h2>
-							<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+							<time><i class="fa-regular fa-clock"></i> 18:45</time>
 						</div>
 					</div>
 				</div>
@@ -313,7 +389,7 @@
 								<a href="#" target="_blank">Internacional</a>
 							</div>
 							<h2><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugiat libero</a></h2>
-							<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+							<time><i class="fa-regular fa-clock"></i> 19:20</time>
 						</div>
 					</div>
 				</div>
@@ -330,7 +406,7 @@
 								<a href="#" target="_blank">Deportes</a>
 							</div>
 							<h2><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugiat libero</a></h2>
-							<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+							<time><i class="fa-regular fa-clock"></i> 21:30</time>
 						</div>
 					</div>
 				</div>
@@ -342,7 +418,7 @@
 								<a href="#" target="_blank">Deportes</a>
 							</div>
 							<h2><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugiat libero</a></h2>
-							<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+							<time><i class="fa-regular fa-clock"></i> 22:30</time>
 						</div>
 					</div>
 				</div>
@@ -371,8 +447,21 @@
 		  </button>
 		</div>
 	
-	  </div>
-	<!-- CIERRE DE ULTIMAS NOTICIAS -->
+	</div>
+	<!-- CIERRE DE LO ULTIMO -->
+			</div>
+		</div>
+	</section>
+
+	<!-- INICIO DE ADDS  -->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="infoAdd__90-728 mt-5"></div>
+			</div>
+		</div>
+	</div>
+	<!-- CIERRE DE ADDS  -->
 
 	<!-- INICIO SECTION -->
 	<div class="headerSection container">
@@ -387,72 +476,85 @@
 
 			<div class="row">
 				<div class="col-md-8">
-					<div class="col-12">
-
-					<div class="cardSection">
-							<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/balacera-cercanias-colegio-estudiantes-750x400.jpg" alt="">
-							<div class="cardSection__text">
-								<div class="category nacional_secondary">
-									<a href="#" target="_blank">Nacional</a>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="cardSection">
+									<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/balacera-cercanias-colegio-estudiantes-750x400.jpg" alt="">
+									<div class="cardSection__text">
+										<div class="category nacional_secondary">
+											<a href="#" target="_blank">Nacional</a>
+										</div>
+										<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
+										<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+									</div>
 								</div>
-								<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
-								<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
 							</div>
-						</div>
-					</div>
-
-					<div class="col-12">
-						<div class="cardSection">
-							<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/balacera-cercanias-colegio-estudiantes-750x400.jpg" alt="">
-							<div class="cardSection__text">
-								<div class="category nacional_secondary">
-									<a href="#" target="_blank">Nacional</a>
+		
+							<div class="col-md-4">
+								<div class="cardSection">
+									<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/balacera-cercanias-colegio-estudiantes-750x400.jpg" alt="">
+									<div class="cardSection__text">
+										<div class="category nacional_secondary">
+											<a href="#" target="_blank">Nacional</a>
+										</div>
+										<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
+										<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+									</div>
 								</div>
-								<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
-								<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
 							</div>
-						</div>
-					</div>
-
-					<div class="col-12">
-						<div class="cardSection">
-							<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/lechera-chilena-manuka-obtiene-certificacion-internacional-750x400.jpg" alt="">
-							<div class="cardSection__text">
-								<div class="category nacional_secondary">
-									<a href="#" target="_blank">Nacional</a>
+		
+							<div class="col-md-4">
+								<div class="cardSection">
+									<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/lechera-chilena-manuka-obtiene-certificacion-internacional-750x400.jpg" alt="">
+									<div class="cardSection__text">
+										<div class="category nacional_secondary">
+											<a href="#" target="_blank">Nacional</a>
+										</div>
+										<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
+										<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+									</div>
 								</div>
-								<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
-								<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
 							</div>
-						</div>
-					</div>
-
-					<div class="col-12">
-						<div class="cardSection">
-							<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/balacera-cercanias-colegio-estudiantes-750x400.jpg" alt="">
-							<div class="cardSection__text">
-								<div class="category nacional_secondary">
-									<a href="#" target="_blank">Nacional</a>
+		
+							<div class="col-md-4">
+								<div class="cardSection">
+									<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/balacera-cercanias-colegio-estudiantes-750x400.jpg" alt="">
+									<div class="cardSection__text">
+										<div class="category nacional_secondary">
+											<a href="#" target="_blank">Nacional</a>
+										</div>
+										<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
+										<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+									</div>
 								</div>
-								<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
-								<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
 							</div>
-						</div>
-					</div>
-
-					<div class="col-12">
-						<div class="cardSection">
-							<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/balacera-cercanias-colegio-estudiantes-750x400.jpg" alt="">
-							<div class="cardSection__text">
-								<div class="category nacional_secondary">
-									<a href="#" target="_blank">Nacional</a>
+		
+							<div class="col-md-4">
+								<div class="cardSection">
+									<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/balacera-cercanias-colegio-estudiantes-750x400.jpg" alt="">
+									<div class="cardSection__text">
+										<div class="category nacional_secondary">
+											<a href="#" target="_blank">Nacional</a>
+										</div>
+										<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
+										<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+									</div>
 								</div>
-								<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
-								<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
 							</div>
-						</div>
-					</div>
 
+							<div class="col-md-4">
+								<div class="cardSection">
+									<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/balacera-cercanias-colegio-estudiantes-750x400.jpg" alt="">
+									<div class="cardSection__text">
+										<div class="category nacional_secondary">
+											<a href="#" target="_blank">Nacional</a>
+										</div>
+										<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
+										<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+									</div>
+								</div>
+							</div>
+					</div>
 				</div>
 				<div class="col-md-4">
 					<!-- INICIO DE ADS RIGHT-->
@@ -473,8 +575,18 @@
 	</section>
 	<!-- CIERRE SECTION -->
 
+	<!-- INICIO DE ADDS  -->
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="infoAdd__90-728 mt-5"></div>
+				</div>
+			</div>
+		</div>
+	<!-- CIERRE DE ADDS  -->
+
 	<!-- INICIO SECTION -->
-	<div class="headerSection container mt-5">
+	<div class="headerSection container">
 		<div class="category deportes_primary">
 			<a href="#" target="_blank">Deportes</a>
 		</div>
@@ -486,59 +598,85 @@
 
 			<div class="row">
 				<div class="col-md-8">
-					<div class="col-12">
-
-					<div class="cardSection">
-							<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/balacera-cercanias-colegio-estudiantes-750x400.jpg" alt="">
-							<div class="cardSection__text">
-								<div class="category deportes_secondary">
-									<a href="#" target="_blank">Deportes</a>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="cardSection">
+									<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/balacera-cercanias-colegio-estudiantes-750x400.jpg" alt="">
+									<div class="cardSection__text">
+										<div class="category deportes_secondary">
+											<a href="#" target="_blank">Deportes</a>
+										</div>
+										<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
+										<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+									</div>
 								</div>
-								<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
-								<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
 							</div>
-						</div>
-					</div>
-
-					<div class="col-12">
-						<div class="cardSection">
-							<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/balacera-cercanias-colegio-estudiantes-750x400.jpg" alt="">
-							<div class="cardSection__text">
-								<div class="category deportes_secondary">
-									<a href="#" target="_blank">Deportes</a>
+		
+							<div class="col-md-4">
+								<div class="cardSection">
+									<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/balacera-cercanias-colegio-estudiantes-750x400.jpg" alt="">
+									<div class="cardSection__text">
+										<div class="category deportes_secondary">
+											<a href="#" target="_blank">Deportes</a>
+										</div>
+										<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
+										<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+									</div>
 								</div>
-								<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
-								<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
 							</div>
-						</div>
-					</div>
-
-					<div class="col-12">
-						<div class="cardSection">
-							<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/lechera-chilena-manuka-obtiene-certificacion-internacional-750x400.jpg" alt="">
-							<div class="cardSection__text">
-								<div class="category deportes_secondary">
-									<a href="#" target="_blank">Deportes</a>
+		
+							<div class="col-md-4">
+								<div class="cardSection">
+									<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/lechera-chilena-manuka-obtiene-certificacion-internacional-750x400.jpg" alt="">
+									<div class="cardSection__text">
+										<div class="category deportes_secondary">
+											<a href="#" target="_blank">Deportes</a>
+										</div>
+										<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
+										<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+									</div>
 								</div>
-								<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
-								<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
 							</div>
-						</div>
-					</div>
-
-					<div class="col-12">
-						<div class="cardSection">
-							<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/balacera-cercanias-colegio-estudiantes-750x400.jpg" alt="">
-							<div class="cardSection__text">
-								<div class="category deportes_secondary">
-									<a href="#" target="_blank">Deportes</a>
+		
+							<div class="col-md-4">
+								<div class="cardSection">
+									<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/balacera-cercanias-colegio-estudiantes-750x400.jpg" alt="">
+									<div class="cardSection__text">
+										<div class="category deportes_secondary">
+											<a href="#" target="_blank">Deportes</a>
+										</div>
+										<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
+										<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+									</div>
 								</div>
-								<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
-								<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
 							</div>
-						</div>
-					</div>
 
+							<div class="col-md-4">
+								<div class="cardSection">
+									<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/balacera-cercanias-colegio-estudiantes-750x400.jpg" alt="">
+									<div class="cardSection__text">
+										<div class="category deportes_secondary">
+											<a href="#" target="_blank">Deportes</a>
+										</div>
+										<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
+										<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="cardSection">
+									<img src="https://media.biobiochile.cl/wp-content/uploads/2022/11/balacera-cercanias-colegio-estudiantes-750x400.jpg" alt="">
+									<div class="cardSection__text">
+										<div class="category deportes_secondary">
+											<a href="#" target="_blank">Deportes</a>
+										</div>
+										<h2><a href="#" target="_blank">Google: doodle homenajea a primera persona que sugirió el lavado de manos</a></h2>
+										<time><i class="fa-regular fa-clock"></i> 08 de Noviembre de 2022</time>
+									</div>
+								</div>
+							</div>
+					</div>
 				</div>
 				<div class="col-md-4">
 					<!-- INICIO DE ADS RIGHT-->
@@ -563,6 +701,65 @@
 		</div>
 	</section>
 	<!-- CIERRE SECTION -->
+
+	<!-- INICIO DE FOOTER -->
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="about-us-foot">
+						<img src="./img/logo-header.svg" alt="La Tribuna">
+					</div>
+				</div>
+				<div class="col-md-4">
+				
+					<div class="col-md-12">
+						<h5 class="text-white text-uppercase h6 siguenos">Siguenos en</h5>
+						<div class="social-media">
+							<a href=""><i class="fa fa-facebook"></i></a>
+							<a href=""><i class="fa fa-twitter"></i></a>
+							<a href=""><i class="fa fa-instagram"></i></a>
+							<a href=""><i class="fa-brands fa-youtube"></i></a>
+							<a href=""><i class="fa-solid fa-rss"></i></a>
+						</div>
+					</div>
+					<div class="radio__footer">
+						<a href="#">
+							<img src="./img/radio-san-cristobal-white.svg" alt="logo">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="col-md-12">
+						<ul>
+							<li><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+56432311040">(43) 2311040 / 2313315</a></li>
+							<li><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:prensa@latribuna.cl"> prensa@latribuna.cl</a></li>
+							<li><i class="far fa-newspaper" aria-hidden="true"></i> <a target="_blank" href="https://tarifas.servel.cl/visualizar/e00fb257cfbc2048d08678afe2abf142d3293169">Tarifas electorales Impreso</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<ul>
+						<li><i class="fas fa-globe" aria-hidden="true"></i> <a target="_blank" href="https://tarifas.servel.cl/visualizar/95ce67a95fb76ab3ab5441fd249abcbd1836d582">Tarifas electorales Radio San Cristobal</a></li>
+						<li><i class="fa-solid fa-link"></i><a target="_blank" href="https://www.latribuna.cl/paginas/informacion-corporativa.html" title="Quienes Somos">Quiénes somos</a></li>
+						<li><i class="fa-solid fa-link"></i><a target="_blank" href="https://diario.latribuna.cl/library" title="Papel digital">Papel Digital</a></li>
+					</ul>
+				</div>
+			</div>
+		
+
+		
+			
+			<div class="copyright">
+				<span>© 2022 Todos los derechos reservado </span>
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
+	<!-- CIERRE DE FOOTER -->
 	  
 
 

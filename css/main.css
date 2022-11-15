@@ -28,7 +28,8 @@ body {
 	margin: 0;
 	font-size: 16px;
 	font-family: 'Noto Sans Display', sans-serif;
-	background: #fff;
+	/* background: #fff; */
+    background: #192d51;
 	background-size: cover;
 	color: #787878;
 	font-weight: 300;
@@ -537,6 +538,7 @@ time{
     display: flex;
     justify-content:space-around;
     align-items: center;
+    background-color: #fff;
 }
 
 .logoHeader__date{
@@ -1008,4 +1010,12 @@ ul.opcionesRedes li a{
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+#mierda{
+    display: none;
+}
+
+header {
+    background: #fff;
 }

@@ -15,25 +15,28 @@
 // });
 
 $(function(){
+	
 	$(window).bind('scroll', function() {
 	var navHeight = $( window ).height() - 40;
 		  if ($(window).scrollTop() > navHeight) {
-			$('.logoHeader').hide();
-			$('.infoAdd').hide();
-			$('nav').addClass('fixed-top');
-			$('.navbar-brand').removeClass('d-none');
-			$('.navbar-brand').addClass('d-block');
-			$('.redesComunidad').addClass('fixed-redes');
+			$('#mierda').stop().fadeIn(100); 
+			$('#mierda').css({
+				'position':'fixed',
+				'top':'0',
+				'left':'0',
+				'width':'100%',
+				'z-index':'999'
+			})
 			
 		  }
 		  else {
-			$('.logoHeader').show();
-			$('.infoAdd').show();
-			$('nav').removeClass('fixed-top');
-			$('.navbar-brand').removeClass('d-block');
-			$('.navbar-brand').addClass('d-none');
-			$('.redesComunidad').removeClass('fixed-redes');
-			// $('.radio').removeClass('d-none');
+			$('#mierda').stop().fadeOut(50); 
+			$('#mierda').css({
+				'position':'static'
+			})
 		  }
+
+	
+		
 	 });
  });

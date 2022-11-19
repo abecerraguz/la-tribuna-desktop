@@ -15,26 +15,50 @@
 // });
 
 $(function(){
-	
+	console.log('Salida de la ventana-->',$(window).scrollTop())
+	console.log('Salida de la ventanaxzxxxx-->',$(window).width())
+	console.log('Slida',$('#logo'))
 	$(window).bind('scroll', function() {
-	var navHeight = $( window ).height() - 40;
-		  if ($(window).scrollTop() > navHeight) {
-			$('#mierda').stop().fadeIn(100); 
-			$('#mierda').css({
-				'position':'fixed',
-				'top':'0',
-				'left':'0',
-				'width':'100%',
-				'z-index':'999'
-			})
-			
-		  }
-		  else {
-			$('#mierda').stop().fadeOut(50); 
-			$('#mierda').css({
-				'position':'static'
-			})
-		  }
+
+		if( $(window).width() >= 1440 ){
+			// 492.5
+			if ( $(window).scrollTop() > 492.5 ) {
+				$('header').css({
+					'position':'fixed',
+					'top':'-349px',
+					'left':'0',
+					'width':'100%',
+					'z-index':'999'
+				})
+				$('#logo').show();
+			}else {
+				$('header').css({
+					'position':'static'
+				})
+				$('#logo').hide();
+			}
+		}
+
+		if( $(window).width() === 1440 ){
+			// 492.5
+			if ( $(window).scrollTop() > 444.88) {
+				$('header').css({
+					'position':'fixed',
+					'top':'-330px',
+					'left':'0',
+					'width':'100%',
+					'z-index':'999'
+				})
+				$('#logo').show();
+			}else {
+				$('header').css({
+					'position':'static'
+				})
+				$('#logo').hide();
+			}
+		}
+
+
 
 	
 		

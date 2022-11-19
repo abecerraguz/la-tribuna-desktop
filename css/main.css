@@ -896,6 +896,11 @@ ul.opcionesRedes li a{
     padding: 1rem 0 0 0;
 }
 
+ul.dropdown-menu.show {
+    padding: 0;
+    overflow: hidden;
+}
+
 @media (max-width: 600px) {
     .contentCardOption {
         display: flex;
@@ -1237,7 +1242,7 @@ header {
 }
 
 
-@media (min-width: 1367px) {
+@media ( min-width: 1367px ) {
 
     ul.dropdown-menu.show li{
         color: #000;
@@ -1297,6 +1302,10 @@ header {
         z-index: 1;
         padding: 1rem;
     }
+
+    #logo{
+        display: none;
+    }
 }
 @media (max-width: 1366px) {
     .contentInfoUltimasNoticias__info h2 a{
@@ -1316,6 +1325,7 @@ header {
         z-index: 1;
         padding: 1rem;
     }
+
 }
 
 @media (max-width: 992px){
@@ -1379,9 +1389,76 @@ header {
         column-count: 1;
         column-gap: 1rem;
     }
+
+    .navbar ul.navbar-nav .btn-group{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul.dropdown-menu.show {
+        padding: 0;
+        overflow: hidden;
+        width: 96vw;
+        border-radius: 0;
+        background: transparent;
+        border: none;
+    }
+
+    .dropdown-item {
+        display: block;
+        width: 100%;
+        padding: 3px 0 3px 10px;
+        clear: both;
+        font-weight: 400;
+        color: #fff;
+        text-align: inherit;
+        text-decoration: none;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid #ffffff26;
+    }
+
+    .dropdown-item {
+        display: block;
+        width: 100%;
+        padding: 3px 0 3px 10px;
+        clear: both;
+        font-weight: 400;
+        color: #fff;
+        text-align: inherit;
+        text-decoration: none;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid #ffffff26;
+        font-size: 1rem;
+    }
+
+    .dropdown-item:hover{
+        color: #6cbef6;
+    }
+
+    .navbar ul.navbar-nav{
+        width: 96vw;
+    }
+
+    .navbar ul.navbar-nav li.nav-item{
+        border-bottom: 1px solid #ffffff42;
+    }
+
+    .navbar ul.navbar-nav li.btn-group{
+        border-bottom: 1px solid #ffffff42;
+    }
+
+    ul.dropdown-menu.show li:last-child a.dropdown-item{
+        border-bottom: none;
+    }
+
 }
 
-@media only screen and (min-width: 530px) and (max-width: 949px){
+@media only screen and (min-width: 530px) and (max-width: 991px){
     header .navbar-collapse {
         background: #043f77 !important;
         position: absolute;
@@ -1405,7 +1482,9 @@ header {
         letter-spacing: 0;
         font-size: 0.89rem;
     }
-
+    #logo{
+        display: block;
+    }
   
 }
 

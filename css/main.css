@@ -1326,12 +1326,16 @@ header {
         padding: 1rem;
     }
 
+    .navbar-brand{
+        width: 105px;
+    }
+
 }
 
 @media (max-width: 992px){
 
     .about-us-foot img {
-        max-width: 40%;
+        max-width: 25%;
         margin-bottom: 1rem;
     }
     .container {

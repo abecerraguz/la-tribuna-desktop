@@ -20,43 +20,43 @@ $(function(){
 	console.log('Slida',$('#logo'))
 	$(window).bind('scroll', function() {
 
-		if( $(window).width() >= 1440 ){
+		// if( $(window).width() >= 1440 ){
 			// 492.5
 			if ( $(window).scrollTop() > 492.5 ) {
-				$('header').css({
+				$('.header__goup').css({
 					'position':'fixed',
-					'top':'-349px',
+					'top':'0',
 					'left':'0',
 					'width':'100%',
 					'z-index':'999'
 				})
 				$('#logo').show();
 			}else {
-				$('header').css({
+				$('.header__goup').css({
 					'position':'static'
 				})
 				$('#logo').hide();
 			}
-		}
+		// }
 
-		if( $(window).width() === 1440 ){
-			// 492.5
-			if ( $(window).scrollTop() > 444.88) {
-				$('header').css({
-					'position':'fixed',
-					'top':'-330px',
-					'left':'0',
-					'width':'100%',
-					'z-index':'999'
-				})
-				$('#logo').show();
-			}else {
-				$('header').css({
-					'position':'static'
-				})
-				$('#logo').hide();
-			}
-		}
+		// if( $(window).width() === 1440 ){
+		// 	// 492.5
+		// 	if ( $(window).scrollTop() > 444.88) {
+		// 		$('header').css({
+		// 			'position':'fixed',
+		// 			'top':'-330px',
+		// 			'left':'0',
+		// 			'width':'100%',
+		// 			'z-index':'999'
+		// 		})
+		// 		$('#logo').show();
+		// 	}else {
+		// 		$('header').css({
+		// 			'position':'static'
+		// 		})
+		// 		$('#logo').hide();
+		// 	}
+		// }
 
 
 

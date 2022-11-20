@@ -947,6 +947,44 @@ ul.dropdown-menu.show {
     border-top: 5px solid #005996;
     background: #003168;
     padding: 35px 0;
+    position: relative;
+}
+
+#top {
+    width: 62px;
+    height: 60px;
+    border-radius: 100%;
+    background: #0093C4;
+    border: 5px solid rgb(87 166 219);
+    position: fixed;
+    bottom: 20px;
+    right: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+#top:hover {
+    width: 62px;
+    height: 60px;
+    border-radius: 100%;
+    background: #015c7b;
+    border: 5px solid rgb(87 166 219);
+    position: absolute;
+    bottom: 20px;
+    right: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#top a i{
+    color: #fff;
 }
 
 .about-us-foot {

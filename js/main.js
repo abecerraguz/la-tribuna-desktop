@@ -22,7 +22,7 @@ $(function(){
 
 		// if( $(window).width() >= 1440 ){
 			// 492.5
-			if ( $(window).scrollTop() > 492.5 ) {
+			if ( $(window).scrollTop() > 100 ) {
 				$('.header__goup').css({
 					'position':'fixed',
 					'top':'0',
@@ -63,4 +63,19 @@ $(function(){
 	
 		
 	 });
+
+	 $("#top").hide();
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#top').first().fadeIn("slow");
+
+            } else {
+                $('#top').fadeOut("slow");
+            }
+        });
+
+        $('#top').click(function () {
+            $('body,html').animate({scrollTop: 0}, 800);
+            // return false;
+        });
  });

@@ -1190,6 +1190,13 @@ ul.dropdown-menu.show {
     width: 100%;
 }
 
+#post .dateShare {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1rem 0;
+}
+
 .dateShareRight {
     display: flex;
     justify-content:flex-end;
@@ -1483,6 +1490,8 @@ header {
         border-bottom: none;
     }
 
+
+
 }
 
 @media only screen and (min-width: 530px) and (max-width: 991px){
@@ -1512,8 +1521,40 @@ header {
     #logo{
         display: block;
     }
+
   
 }
+@media (max-width: 768px){
+    .post-main {
+        margin-right:auto!important;
+        margin-left:auto!important;
+        max-width: 100vw!important;
+        width: 100%!important;
+        /* padding: 0 1rem!important; */
+        /* border: 1px solid red; */
+        height: auto;
+        overflow: hidden;
+    }
+    .post__content{
+        padding: 0 1rem;
+    }
+    #top {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background: #0093C4;
+        border: 2px solid rgb(87 166 219);
+        position: fixed;
+        bottom: 200px;
+        right: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
 
 /* CSS SINGLE */
 
@@ -1591,6 +1632,13 @@ header {
     color: #3498db;
     text-decoration: underline;
 }
+
+#post .post-main .despliega-redes a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
 
 #post .post-main img {
     width: 100%;
@@ -1765,17 +1813,49 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 1.2rem 0 1.2rem;
+    padding: 0 1.2rem 0 2rem;
     color: #fff;
-    font-size: 1.1875rem;
+    font-size: 1.1rem;
     line-height: 2;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: none;
     /* border-right: 2px solid rgb(22 49 96 / 27%); */
     border-radius: 5px 5px 0 0;
     margin: 0 ;
+    position: relative;
+}
+
+#post .hederSection h2:before{
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 6px;
+    width: 6px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    animation: hearbeat_scale 1s infinite;
+}
+
+#post .hederSection h2:after{
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    height: 14px;
+    width: 14px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    opacity: .3;
+    animation: hearbeat_scale 1s infinite;
+}
+
+@keyframes hearbeat_scale{
+    0%{transform:scale(1)}
+    50%{transform:scale(.75)}
+    100%{transform:scale(1)}
 }
 
 .background-celeste {
@@ -1795,10 +1875,27 @@ header {
 }
 
 #post .bodySection article img {
-    width: 150px;
+    width: 134px;
     height: 90px;
     object-fit: cover;
     margin-right: 1rem;
+}
+
+#post .bodySection article .article__loMasVisto-number{
+    position: relative;
+}
+
+#post .bodySection article .article__loMasVisto-number .article__loMasVisto-num{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(35 104 151 / 73%);
+    color: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-weight: 600;
 }
 
 #post .bodySection article h3 {
@@ -1819,4 +1916,12 @@ header {
     position: fixed;
     width: 100%;
     z-index: 6000;
+}
+
+.bajada h2{
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+    margin: 0 0 1.5rem 0;
 }

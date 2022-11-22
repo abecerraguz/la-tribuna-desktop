@@ -22,44 +22,45 @@ $(function(){
 
 		// if( $(window).width() >= 1440 ){
 			// 492.5
+			// if ( $(window).scrollTop() > 100 ) {
+			// 	$('.header__goup').css({
+			// 		'position':'fixed',
+			// 		'top':'0',
+			// 		'left':'0',
+			// 		'width':'100%',
+			// 		'z-index':'999'
+			// 	})
+			// 	$('#logo').show();
+			// }else {
+			// 	$('.header__goup').css({
+			// 		'position':'static'
+			// 	})
+			// 	$('#logo').hide();
+			// }
+
 			if ( $(window).scrollTop() > 100 ) {
-				$('.header__goup').css({
-					'position':'fixed',
-					'top':'0',
-					'left':'0',
-					'width':'100%',
-					'z-index':'999'
+				$('#contentHome').css({
+					'padding-top':'387px'
+				})
+				$('#contentPost').css({
+					'padding-top':'387px'
+				})
+				$('#brandAdds').css({
+					'top':'-349px'
 				})
 				$('#logo').show();
 			}else {
-				$('.header__goup').css({
-					'position':'static'
+				$('#contentPost').css({
+					'padding-top':'460px'
+				})
+				$('#contentHome').css({
+					'padding-top':'460px'
+				})
+				$('#brandAdds').css({
+					'top':'0'
 				})
 				$('#logo').hide();
 			}
-		// }
-
-		// if( $(window).width() === 1440 ){
-		// 	// 492.5
-		// 	if ( $(window).scrollTop() > 444.88) {
-		// 		$('header').css({
-		// 			'position':'fixed',
-		// 			'top':'-330px',
-		// 			'left':'0',
-		// 			'width':'100%',
-		// 			'z-index':'999'
-		// 		})
-		// 		$('#logo').show();
-		// 	}else {
-		// 		$('header').css({
-		// 			'position':'static'
-		// 		})
-		// 		$('#logo').hide();
-		// 	}
-		// }
-
-
-
 	
 		
 	 });

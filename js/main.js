@@ -19,6 +19,7 @@ $(function(){
 					}else {
 						$('#contentHome').css({'padding-top':'460px'})
 						$('#brandAdds').css({'top':'0'})
+						$('#logo').hide();
 					}
 				})
 			break;
@@ -34,6 +35,7 @@ $(function(){
 					}else {
 						$('#contentHome').css({'padding-top':'460px'})
 						$('#brandAdds').css({'top':'0'})
+						$('#logo').hide();
 					}
 				})
 			break;
@@ -47,6 +49,7 @@ $(function(){
 						$('#brandAdds').css({'top':'-349px'})
 						$('#logo').show();
 					}else {
+						$('#logo').hide();
 						$('#contentHome').css({'padding-top':'460px'})
 						$('#brandAdds').css({'top':'0'})
 					}
